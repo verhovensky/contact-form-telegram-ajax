@@ -3,67 +3,6 @@ body, html{
   height: 100%;
 }
 
-/* Nav Bar & Link Styles */
-
-.nav-item::after{
-    content:'';
-    display:block;
-    width:0px;
-    height:4px;
-    background: white;
-    transition: 0.2s;
-    margin-top:-10px;
-}
-
-.nav-item:hover::after{width: 120%;}
-
-
-.nav-link{padding:15px 5px;transition:0.2s;}
-
-.navbar-nav .nav-link {
-    font-weight:bold;
-    font-size:18px;
-}
-
-/*Nav Links Distance in menu */
-
-.nav-link{
- margin-left: 3vh;
-}
-
-/* My Hero Unit */
-
-.jumbotron{
-	padding-top: 8rem;
-	margin: 0;
-	height: 100vh;
-	text-align: center;
-	background-image: url("../assets/manmobile2.jpg");
-	background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-}
-
-/* Items in hero unit styles */
-
-.itemmain{
-	color: white;
-	padding-bottom: 0;
-}
-
-
-.itemmain::after{
-    content:'';
-    display:block;
-    width:0px;
-    height:4px;
-    background: white;
-    transition: 0.3s;
-    margin-top:10px;
-}
-
-.itemmain:hover::after{width: 100%;}
-
 /* Sites Desc Background */
 .sitesallbg{
   background-image: url("../assets/code-white-small.jpg");

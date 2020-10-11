@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/favico.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form AJAX with Telegram Notifications</title>
+    <!-- Boottrap 4 Min CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Page / Contact Form CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+
+<body>
+    
+<!-- Contact Form -->
+
+<div class="container-fluid blackop pt-5">
+   <h2 class="text-center text-white pb-2"> Have a question?</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info text-white pt-5 pb-5">
+
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                    <h2>Contact Us!</h2>
+                    <h4>We are here to help you!</h4>
+
+            </div>
+		   </div>
+            <div class="col-md-9">
+                <form id="contact-form" method="post" class="form-element">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2 text-white" for="name">Your name here:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" placeholder="Write your name here"
+                                    name="name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2 text-white" for="tel">Your mobile number:</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="tel" placeholder="Enter business mobile number"
+                                    name="tel" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2 text-white" for="comment">Message:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Your question gist"
+                                    name="comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-warning btn-lg" name="submit" value="Submit" data-toggle="modal"> Send </button>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Window -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Result</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Your Message was sucessfully submitted!<br>
+        Your Message was sucessfully submitted, <br> we will contanct you as soon as possible!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End -->
+
+
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/telegramform.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -26,7 +26,7 @@ if (isset($_POST['comment'])) {
 
 $token = " ";
 
-// Chat ID insert in varible $chat_id WITH "-" sign! Example: -27266012221054
+// Chat ID insert in varible $chat_id (without "-" sign) Example: 272660122
 
 $chat_id = " ";
 $arr = array(
